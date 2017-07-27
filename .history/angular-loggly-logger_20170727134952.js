@@ -34,7 +34,7 @@
     var level = 0;
 
     var token = null;
-    var endpoint = '://mobile-logger-master.apps.mia.ulti.io/inputs/';
+    var endpoint = '://https://mobile-logger-master.apps.mia.ulti.io/inputs/';
 
     var buildUrl = function() {
       return (https ? 'https' : 'http') + endpoint + token + '/tag/' + (tag ? tag : 'AngularJS') + '/';
@@ -214,7 +214,7 @@
           //Set header
           var config = {
             headers: {
-              'Content-Type': 'application/json',
+              'Content-Type': 'text/plain',
             },
             withCredentials: false,
           };

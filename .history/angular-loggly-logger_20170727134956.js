@@ -214,7 +214,7 @@
           //Set header
           var config = {
             headers: {
-              'Content-Type': 'application/json',
+              'Content-Type': 'text/plain',
             },
             withCredentials: false,
           };
